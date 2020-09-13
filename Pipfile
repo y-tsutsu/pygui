@@ -7,6 +7,7 @@ verify_ssl = true
 autopep8 = "*"
 flake8 = "*"
 rope = "*"
+pyinstaller = "*"
 
 [packages]
 pysimplegui = "*"
@@ -16,3 +17,4 @@ python_version = "3.8"
 
 [scripts]
 start = "python pygui.py"
+build = "pyinstaller pygui.py --onefile --noconsole"
